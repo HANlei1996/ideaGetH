@@ -171,6 +171,9 @@
                                                 <constraint firstItem="W0G-JJ-hf7" firstAttribute="leading" secondItem="ifH-Hd-Im0" secondAttribute="leading" id="zTt-HU-0ic"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="X9H-ow-GTa" kind="show" id="uf7-Aa-UWD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -197,6 +200,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADs-F6-ZjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-535" y="-967"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="ula-zG-qpg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Info" id="X9H-ow-GTa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybd-7R-zQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="-968"/>
         </scene>
         <!--航空-->
         <scene sceneID="ttd-EO-FUQ">
@@ -264,7 +275,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gwa-aY-zlK">
-                                <rect key="frame" x="0.0" y="250" width="375" height="417"/>
+                                <rect key="frame" x="0.0" y="250" width="375" height="368"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="G8g-Pa-o50">
@@ -295,6 +306,9 @@
                                                 <constraint firstItem="tXz-cl-Sq8" firstAttribute="height" secondItem="Xez-ji-TVl" secondAttribute="height" multiplier="6:7" id="sK8-fe-f5h"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Pg2-Ag-Pg9" kind="show" id="7De-NR-XqT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -315,6 +329,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNo-k1-XJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-535" y="546"/>
+        </scene>
+        <!--MyHotels-->
+        <scene sceneID="z15-KM-4Hu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyHotels" id="Pg2-Ag-Pg9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uxw-92-MFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="545"/>
         </scene>
     </scenes>
 </document>

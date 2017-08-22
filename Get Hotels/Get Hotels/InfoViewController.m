@@ -1,18 +1,18 @@
 //
-//  MyViewController.m
+//  InfoViewController.m
 //  Get Hotels
 //
-//  Created by admin on 2017/8/21.
+//  Created by admin on 2017/8/22.
 //  Copyright © 2017年 com. All rights reserved.
 //
 
-#import "MyViewController.h"
+#import "InfoViewController.h"
 
-@interface MyViewController ()
+@interface InfoViewController ()
 
 @end
 
-@implementation MyViewController
+@implementation InfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

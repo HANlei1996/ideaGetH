@@ -1,13 +1,13 @@
 //
-//  MyViewController.h
+//  PayViewController.h
 //  Get Hotels
 //
-//  Created by admin on 2017/8/21.
+//  Created by admin on 2017/8/22.
 //  Copyright © 2017年 com. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MyViewController : UIViewController
+@interface PayViewController : UIViewController
 
 @end
