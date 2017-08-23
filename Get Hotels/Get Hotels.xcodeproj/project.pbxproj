@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6CE8B6F9B1B8164D807FD05A /* libPods-Get Hotels.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC17A0DAEED4387D84F94E0 /* libPods-Get Hotels.a */; };
+		793E7CBF1F4D9876006187B7 /* myHotelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793E7CBE1F4D9876006187B7 /* myHotelTableViewCell.m */; };
 		8441BE781F4D3EA00088A4D1 /* HotelsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441BE771F4D3EA00088A4D1 /* HotelsTableViewCell.m */; };
 		848FC6021F4A8275008AFF00 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FC5E41F4A8275008AFF00 /* AppAPIClient.m */; };
 		848FC6031F4A8275008AFF00 /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FC5E61F4A8275008AFF00 /* ErrorHandler.m */; };
@@ -65,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		793E7CBD1F4D9876006187B7 /* myHotelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myHotelTableViewCell.h; sourceTree = "<group>"; };
+		793E7CBE1F4D9876006187B7 /* myHotelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myHotelTableViewCell.m; sourceTree = "<group>"; };
 		8372FEEABA951A8D12D5C3E2 /* Pods-Get Hotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Hotels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Get Hotels/Pods-Get Hotels.debug.xcconfig"; sourceTree = "<group>"; };
 		8441BE761F4D3EA00088A4D1 /* HotelsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsTableViewCell.h; sourceTree = "<group>"; };
 		8441BE771F4D3EA00088A4D1 /* HotelsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsTableViewCell.m; sourceTree = "<group>"; };
@@ -167,6 +170,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		793E7CBC1F4D9848006187B7 /* myHotabelView */ = {
+			isa = PBXGroup;
+			children = (
+				793E7CBD1F4D9876006187B7 /* myHotelTableViewCell.h */,
+				793E7CBE1F4D9876006187B7 /* myHotelTableViewCell.m */,
+			);
+			name = myHotabelView;
+			sourceTree = "<group>";
+		};
 		848FC5CC1F4A8202008AFF00 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +226,7 @@
 		848FC6171F4A83D8008AFF00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				793E7CBC1F4D9848006187B7 /* myHotabelView */,
 				84CF5FB41F4822DD00BC8CAC /* AppDelegate.m */,
 				84CF5FB31F4822DD00BC8CAC /* AppDelegate.h */,
 				84CF5FBF1F4822DD00BC8CAC /* Assets.xcassets */,
@@ -624,6 +637,7 @@
 				84CF5FB51F4822DD00BC8CAC /* AppDelegate.m in Sources */,
 				84A38C861F4BEFC50039B726 /* PayViewController.m in Sources */,
 				84DC35911F4BBB8F00B7FCE8 /* BasicEncodingRules.m in Sources */,
+				793E7CBF1F4D9876006187B7 /* myHotelTableViewCell.m in Sources */,
 				848FC6291F4ADC4A008AFF00 /* HotelsViewController.m in Sources */,
 				84CF5FB21F4822DD00BC8CAC /* main.m in Sources */,
 				848FC6581F4AF249008AFF00 /* RegisteredViewController.m in Sources */,

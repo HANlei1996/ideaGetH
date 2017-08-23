@@ -31,14 +31,19 @@
     _arr=@[@{@"name":@"无锡君乐登酒店",@"addr":@"无锡",@" distance":@"距离我3公里",@" image":@"http://file27.mafengwo.net/M00/90/3E/wKgB6lPQq_KALsmEABOHjz8mBYs76.rbook_comment.w1024.jpeg",@"money":@"¥318"},];
     //[_arr addObject:hotelsModel];
     [super viewDidLoad];
-    
-        // Do any additional setup after loading the view.
+    [self naviConfig];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    [self naviConfig];
+    
     // Dispose of any resources that can be recreated.
+}
+//当前页面将要显示的时候，隐藏导航栏
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 /*
