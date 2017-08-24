@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6CE8B6F9B1B8164D807FD05A /* libPods-Get Hotels.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC17A0DAEED4387D84F94E0 /* libPods-Get Hotels.a */; };
+<<<<<<< HEAD
 		84113D791F4D961B00AE4D71 /* hangkongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84113D781F4D961B00AE4D71 /* hangkongViewController.m */; };
 		84113D7C1F4D97D900AE4D71 /* MyHotelsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84113D7B1F4D97D900AE4D71 /* MyHotelsTableViewCell.m */; };
 		84130F431F4E5E6800140F50 /* hotelInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84130F421F4E5E6800140F50 /* hotelInfoViewController.m */; };
+=======
+		793E7CBF1F4D9876006187B7 /* myHotelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793E7CBE1F4D9876006187B7 /* myHotelTableViewCell.m */; };
+>>>>>>> cc32dc1804133965b65bfe0e77bcbea0e7a86351
 		8441BE781F4D3EA00088A4D1 /* HotelsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441BE771F4D3EA00088A4D1 /* HotelsTableViewCell.m */; };
 		848FC6021F4A8275008AFF00 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FC5E41F4A8275008AFF00 /* AppAPIClient.m */; };
 		848FC6031F4A8275008AFF00 /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 848FC5E61F4A8275008AFF00 /* ErrorHandler.m */; };
@@ -68,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		793E7CBD1F4D9876006187B7 /* myHotelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myHotelTableViewCell.h; sourceTree = "<group>"; };
+		793E7CBE1F4D9876006187B7 /* myHotelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myHotelTableViewCell.m; sourceTree = "<group>"; };
 		8372FEEABA951A8D12D5C3E2 /* Pods-Get Hotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Hotels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Get Hotels/Pods-Get Hotels.debug.xcconfig"; sourceTree = "<group>"; };
 		84113D771F4D961B00AE4D71 /* hangkongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hangkongViewController.h; sourceTree = "<group>"; };
 		84113D781F4D961B00AE4D71 /* hangkongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hangkongViewController.m; sourceTree = "<group>"; };
@@ -176,6 +182,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		84130F3F1F4E5E0700140F50 /* hotelInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +190,15 @@
 				84130F421F4E5E6800140F50 /* hotelInfoViewController.m */,
 			);
 			name = hotelInfo;
+=======
+		793E7CBC1F4D9848006187B7 /* myHotabelView */ = {
+			isa = PBXGroup;
+			children = (
+				793E7CBD1F4D9876006187B7 /* myHotelTableViewCell.h */,
+				793E7CBE1F4D9876006187B7 /* myHotelTableViewCell.m */,
+			);
+			name = myHotabelView;
+>>>>>>> cc32dc1804133965b65bfe0e77bcbea0e7a86351
 			sourceTree = "<group>";
 		};
 		848FC5CC1F4A8202008AFF00 /* Utility */ = {
@@ -232,6 +248,7 @@
 		848FC6171F4A83D8008AFF00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				793E7CBC1F4D9848006187B7 /* myHotabelView */,
 				84CF5FB41F4822DD00BC8CAC /* AppDelegate.m */,
 				84CF5FB31F4822DD00BC8CAC /* AppDelegate.h */,
 				84CF5FBF1F4822DD00BC8CAC /* Assets.xcassets */,
@@ -649,7 +666,11 @@
 				84CF5FB51F4822DD00BC8CAC /* AppDelegate.m in Sources */,
 				84A38C861F4BEFC50039B726 /* PayViewController.m in Sources */,
 				84DC35911F4BBB8F00B7FCE8 /* BasicEncodingRules.m in Sources */,
+<<<<<<< HEAD
 				84113D7C1F4D97D900AE4D71 /* MyHotelsTableViewCell.m in Sources */,
+=======
+				793E7CBF1F4D9876006187B7 /* myHotelTableViewCell.m in Sources */,
+>>>>>>> cc32dc1804133965b65bfe0e77bcbea0e7a86351
 				848FC6291F4ADC4A008AFF00 /* HotelsViewController.m in Sources */,
 				84CF5FB21F4822DD00BC8CAC /* main.m in Sources */,
 				848FC6581F4AF249008AFF00 /* RegisteredViewController.m in Sources */,
