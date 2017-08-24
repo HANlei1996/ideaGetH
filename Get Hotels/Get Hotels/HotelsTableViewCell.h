@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *hotelsName;
 @property (weak, nonatomic) IBOutlet UILabel *hotelsmoney;
 @property (weak, nonatomic) IBOutlet UILabel *hotelsAddr;
-@property (weak, nonatomic) IBOutlet UILabel *hotelsDistance;@end
+@property (weak, nonatomic) IBOutlet UILabel *hotelsDistance;
+@end

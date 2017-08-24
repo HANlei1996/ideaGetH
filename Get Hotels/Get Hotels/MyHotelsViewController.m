@@ -7,8 +7,13 @@
 //
 
 #import "MyHotelsViewController.h"
-
-@interface MyHotelsViewController ()
+#import "MyHotelsTableViewCell.h"
+@interface MyHotelsViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UIImageView *touxiangImage;
+@property (weak, nonatomic) IBOutlet UILabel *nameLable;
+@property (weak, nonatomic) IBOutlet UILabel *dengjiLabel;
+@property (strong, nonatomic) NSArray *myArr;
+@property (weak, nonatomic) IBOutlet UITableView *myTabelView;
 
 @end
 
@@ -17,30 +22,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _myArr = @[@{@"htImage":@"酒店",@"hotelsLabel":@"我的酒店"},@{@"htImage":@"航空",@"hotelsLabel":@"我的航空"},@{@"htImage":@"航空",@"hotelsLabel":@"我的消息"},@{@"htImage":@"设置",@"hotelsLabel":@"账户设置"},@{@"htImage":@"航空",@"hotelsLabel":@"使用协议"},@{@"htImage":@"联系客服",@"hotelsLabel":@"联系客服"}];
+    _myTabelView.tableFooterView = [UIView new];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//设置导航栏样式
-- (void)setNavigationItem{
-    //self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
-     
-    //实例化一个button 类型为UIButtonTypeSystem
-    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    //设置位置大小
-    leftBtn.frame = CGRectMake(0, 0, 20, 20);
-    //设置其背景图片为返回图片
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
-    //给按钮添加事件
-    [leftBtn addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
-}
-//自定的返回按钮的事件
-- (void)leftButtonAction: (UIButton *)sender{
-    [self.navigationController popViewControllerAnimated:YES];
+//当前页面将要显示的时候，隐藏导航栏
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 /*
@@ -53,4 +46,39 @@
 }
 */
 
+//设置表格视图一共有多少组
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return _myArr.count;
+}
+
+
+//设置表格视图中每一组由多少行
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 1;
+    
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    MyHotelsTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"myHotelsCell" forIndexPath:indexPath];
+    NSDictionary *dict = _myArr[indexPath.section];
+    cell.htImage.image = [UIImage imageNamed:dict[@"htImage"]];
+    cell.hotelsLabel.text = dict[@"hotelsLabel"];
+    return cell;
+}
+//设置组的底部视图高度
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    if (section == 2) {
+        return 5.f;
+    }
+    return 1.f;
+}
+//设置细胞高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50.f;
+}
+//细胞选中后调用
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //取消细胞的选中状态
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 @end
